@@ -1,11 +1,14 @@
-import { Container } from '@mui/material';
+import { Routes, Route } from 'react-router-dom';
+import Home from './layouts/Home';
+import Houses from './layouts/Houses';
+import Staff from './layouts/Staff';
 
-function App() {
-	return (
-		<Container>
-			<h1>Welcome to Hogwarts!</h1>
-		</Container>
-	);
-}
+const App = () => (
+	<Routes>
+		<Route path='/' element={<Home />} />
+		<Route path='/houses' element={<Houses />} />
+		<Route path='/staff' element={<Staff />} />
+	</Routes>
+);
 
 export default App;
