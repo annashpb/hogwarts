@@ -1,24 +1,15 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { HousesNavigation } from '../components/HousesNavigation';
 
 export const Houses = () => (
 	<>
 		<h1>Phease follow to your common room</h1>
-		<nav>
-			<ul>
-				<li>
-					<Link to='/houses/gryffindor'>Gryffindor</Link>
-				</li>
-				<li>
-					<Link to='/houses/hufflepuff'>Hufflepuff</Link>
-				</li>
-				<li>
-					<Link to='/houses/ravenclaw'>Ravenclaw</Link>
-				</li>
-				<li>
-					<Link to='/houses/slytherin'>Slytherin</Link>
-				</li>
-			</ul>
-		</nav>
+		<p>
+			Hogwarts is divided into four houses, each bearing the last name of its
+			founder: Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw and Helga
+			Hufflepuff.
+		</p>
+		<HousesNavigation />
 
 		<Outlet />
 	</>
