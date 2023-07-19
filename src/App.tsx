@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './layouts/Home';
-import { Houses } from './layouts/Houses';
-import { SingleHouse } from './layouts/SingleHouse';
-import { SingleStudent } from './layouts/SingleStudent';
-import { Staff } from './layouts/Staff';
-import { SingleStaffMember } from './layouts/SingleStaffMember';
-import { NotFound } from './layouts/NotFound';
+import { Home } from './pages/Home';
+import { Houses } from './pages/Houses';
+import { SingleHouse } from './pages/SingleHouse';
+import { SingleStudent } from './pages/SingleStudent';
+import { Staff } from './pages/Staff';
+import { SingleStaffMember } from './pages/SingleStaffMember';
+import { NotFound } from './pages/NotFound';
 import { Menu } from './components/Menu';
 import { Container } from '@mui/material';
 
