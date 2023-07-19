@@ -14,6 +14,7 @@ export const MobileLink = styled(NavLink)`
 `;
 
 export const DesktopLink = styled(NavLink)`
+	padding: 0.75rem;
 	font-weight: 700;
 	text-decoration: none;
 	color: ${({ theme }) => theme.palette.secondary.main};
