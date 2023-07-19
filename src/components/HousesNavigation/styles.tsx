@@ -9,7 +9,8 @@ export const HouseLink = styled(Link)`
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
-	font-weight: 300;
+	font-family: 'Cinzel', serif;
+	font-weight: 500;
 	color: ${({ theme }) => theme.palette.text.primary};
 	text-transform: uppercase;
 	text-decoration: none;
@@ -19,7 +20,7 @@ export const HouseLink = styled(Link)`
 	&:hover,
 	&:focus {
 		transform: translate(-1px, -1px);
-		font-weight: 600;
+		font-weight: 700;
 		box-shadow: 3px 3px 10px rgba(62, 81, 81, 0.6);
 	}
 `;

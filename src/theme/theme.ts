@@ -18,6 +18,9 @@ const theme = createTheme({
 			main: red.A400,
 		},
 	},
+	typography: {
+		fontFamily: "'Arsenal', Arial, sans-serif",
+	},
 });
 
 export default theme;
