@@ -23,7 +23,7 @@ export const Menu = () => {
 	const handleMenuToggle = () => setMenuExpanded(!menuExpanded);
 
 	return (
-		<>
+		<header>
 			<AppBar component='nav' position='sticky'>
 				<Toolbar>
 					<IconButton
@@ -74,6 +74,6 @@ export const Menu = () => {
 					</Box>
 				</Drawer>
 			</Box>
-		</>
+		</header>
 	);
 };
