@@ -1,4 +1,9 @@
-export const navigationItems = [
+interface INavItems {
+	url: string;
+	title: string;
+}
+
+export const navigationItems: INavItems[] = [
 	{
 		url: '/',
 		title: 'Home',

@@ -16,7 +16,7 @@ import { navigationItems } from '../../helpers/navigationItems';
 import { MobileLink, DesktopLink } from './styles';
 
 export const Menu = () => {
-	const [menuExpanded, setMenuExpanded] = useState(false);
+	const [menuExpanded, setMenuExpanded] = useState<boolean>(false);
 	const container =
 		typeof window !== 'undefined' ? window.document.body : undefined;
 
