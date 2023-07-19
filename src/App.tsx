@@ -12,9 +12,12 @@ import { Container } from '@mui/material';
 const App = () => (
 	<>
 		<Menu />
+		<Routes>
+			<Route path='/' element={<Home />} />
+		</Routes>
 		<Container>
 			<Routes>
-				<Route path='/' element={<Home />} />
+				<Route path='/' />
 				<Route path='/houses' element={<Houses />}>
 					<Route path=':name' element={<SingleHouse />} />
 				</Route>

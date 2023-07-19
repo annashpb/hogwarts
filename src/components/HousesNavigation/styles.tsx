@@ -9,6 +9,7 @@ export const HouseLink = styled(Link)`
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
+	background-color: #fff;
 	font-family: 'Cinzel', serif;
 	font-weight: 500;
 	color: ${({ theme }) => theme.palette.text.primary};

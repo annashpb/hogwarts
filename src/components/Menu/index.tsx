@@ -25,7 +25,7 @@ export const Menu = () => {
 	const handleMenuToggle = () => setMenuExpanded(!menuExpanded);
 
 	return (
-		<header>
+		<Box component='header' sx={{ position: 'sticky', top: 0, zIndex: 10 }}>
 			<AppBar component='nav' position='sticky'>
 				<Toolbar>
 					<Box py={1} sx={{ flexGrow: 1 }}>
@@ -84,7 +84,7 @@ export const Menu = () => {
 								</Fragment>
 							))}
 						</List>
-						<Box p={2} display='flex' justifyContent='center' >
+						<Box p={2} display='flex' justifyContent='center'>
 							<IconButton onClick={handleMenuToggle}>
 								<ExpandLessIcon />
 							</IconButton>
@@ -92,6 +92,6 @@ export const Menu = () => {
 					</Box>
 				</Drawer>
 			</Box>
-		</header>
+		</Box>
 	);
 };
