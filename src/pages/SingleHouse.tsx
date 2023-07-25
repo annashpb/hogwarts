@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { CircularProgress, Grid } from '@mui/material';
 
 interface IHouseStudent {
+	id: string;
 	name: string;
 }
 
@@ -55,7 +56,7 @@ export const SingleHouse = () => {
 				students.length > 0 && (
 					<Grid container spacing={2}>
 						{students.map((student: IHouseStudent) => (
-							<Grid item xs={12} md={6} lg={4}>
+							<Grid item xs={12} md={6} lg={4} key={student.id}>
 								{student.name}
 							</Grid>
 						))}
