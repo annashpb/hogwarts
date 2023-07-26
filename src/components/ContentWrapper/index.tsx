@@ -1,4 +1,4 @@
-import { CircularProgress } from '@mui/material';
+import { CircularProgress, Alert, AlertTitle } from '@mui/material';
 
 type CWProps = {
 	loading: boolean;
@@ -16,7 +16,12 @@ export const ContentWrapper = ({
 			{loading ? (
 				<CircularProgress />
 			) : errorMessage ? (
-				<p>{errorMessage}</p>
+				<Alert severity='error' sx={{ marginTop: '1rem' }}>
+					<AlertTitle>
+						<strong>Mischief was not managed</strong>
+					</AlertTitle>
+					{errorMessage}
+				</Alert>
 			) : (
 				children
 			)}
