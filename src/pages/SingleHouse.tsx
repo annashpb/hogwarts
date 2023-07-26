@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import { useFetch } from '../hooks/useFetch';
 import { ContentWrapper } from '../components/ContentWrapper';
@@ -11,7 +11,8 @@ interface IHouseStudent {
 export const SingleHouse = () => {
 	const { name } = useParams();
 	const { data, loading, errorMessage } = useFetch(
-		`https://hp-api.onrender.com/api/characters/house/${name}`
+		`https://hp-api.onrender.com/api/characters/house/${name}`,
+		'house'
 	);
 
 	return (
@@ -23,7 +24,7 @@ export const SingleHouse = () => {
 						<Grid container spacing={2}>
 							{data.map((student: IHouseStudent) => (
 								<Grid item xs={12} md={6} lg={4} key={student.id}>
-									{student.name}
+									<Link to={`/student/${student.id}`}>{student.name}</Link>
 								</Grid>
 							))}
 						</Grid>

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export const useFetch = (url: string) => {
+export const useFetch = (url: string, instance: string = 'instance') => {
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [errorMessage, setErrorMessage] = useState('');
@@ -20,7 +20,7 @@ export const useFetch = (url: string) => {
 					setLoading(false);
 				} else {
 					throw new Error(
-						"I'm afraid, there's no such house in Hogwarts, honey"
+						`I'm afraid, there's no such ${instance} in Hogwarts, honey`
 					);
 				}
 			})
